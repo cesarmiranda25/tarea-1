@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesar Pago - TechStore</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TechStore</h1>
+        <p>Los mejores productos tecnológicos</p>
+    </header>
+
+    <main>
+
+        <div class="producto">
+
+            <div class="informacion">
+
+                <h2>Resumen y Pago</h2>
+
+                <p class="precio">
+                    Total a pagar: $899.00 MXN<br>
+                </p>
+
+                <h3>Beneficios de pago</h3><br>
+                <ul>
+                    <li>6 meses sin intereses</li><br>
+                </ul>
+
+                <form action="index.html">
+
+                    <label for="tarjeta">Número de tarjeta</label>
+                    <input 
+                        type="text" 
+                        id="tarjeta" 
+                        placeholder="0000 0000 0000 0000" 
+                        required
+                    ><br>
+
+                    <label for="expiracion">Fecha de expiración</label>
+                    <input 
+                        type="text" 
+                        id="expiracion" 
+                        placeholder="MM/AA" 
+                        required
+                    ><br>
+
+                    <label for="cvv">Código de seguridad (CVV)</label>
+                    <input 
+                        type="password" 
+                        id="cvv" 
+                        placeholder="123" 
+                        maxlength="4" 
+                        required
+                    ><br>
+
+                    <button type="submit">Pagar</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
